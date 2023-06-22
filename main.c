@@ -12,8 +12,7 @@ typedef struct
 
 typedef struct
 {
-  CORD A;
-  CORD B;
+  CORD A, B;
 } ROI;
 
 FILE *open_file(char *path);
