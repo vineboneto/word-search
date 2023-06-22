@@ -1,0 +1,10 @@
+{
+  "C_Cpp.intelliSenseEngineFallback": "enabled",
+  "files.associations": {
+    "*.env.development": "env",
+    "*.env.production": "env",
+    "*.env.local": "env",
+    "*.ex": "elixir",
+    "stdio.h": "c"
+  }
+}
