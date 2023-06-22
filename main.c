@@ -154,9 +154,7 @@ ROI *diagonal_SW(char *word, char **matrix, int *rows, int *cols)
           if (i + k < *rows && j - k >= 0 && word[k] == matrix[i + k][j - k])
           {
             if (++count_equals == length_word)
-            {
               break;
-            }
           }
         }
 
@@ -196,9 +194,7 @@ ROI *diagonal_NE(char *word, char **matrix, int *rows, int *cols)
           if (i - k >= 0 && j + k < *cols && word[k] == matrix[i - k][j + k])
           {
             if (++count_equals == length_word)
-            {
               break;
-            }
           }
         }
 
@@ -238,9 +234,7 @@ ROI *diagonal_NW(char *word, char **matrix, int *rows, int *cols)
           if (i - k >= 0 && j - k >= 0 && word[k] == matrix[i - k][j - k])
           {
             if (++count_equals == length_word)
-            {
               break;
-            }
           }
         }
 
@@ -279,9 +273,7 @@ ROI *diagonal_SE(char *word, char **matrix, int *rows, int *cols)
           if (i + k < *rows && j + k < *cols && word[k] == matrix[i + k][j + k])
           {
             if (++count_equals == length_word)
-            {
               break;
-            }
           }
         }
 
@@ -320,9 +312,7 @@ ROI *vertical_backward(char *word, char **matrix, int *rows, int *cols)
           if (i - k >= 0 && word[k] == matrix[i - k][j])
           {
             if (++count_equals == length_word)
-            {
               break;
-            }
           }
         }
 
@@ -362,9 +352,7 @@ ROI *vertical_forward(char *word, char **matrix, int *rows, int *cols)
           if (i + k < *rows && word[k] == matrix[i + k][j])
           {
             if (++count_equals == length_word)
-            {
               break;
-            }
           }
         }
 
@@ -404,9 +392,7 @@ ROI *horizontal_backward(char *word, char **matrix, int *rows, int *cols)
           if (j - k >= 0 && word[k] == matrix[i][j - k])
           {
             if (++count_equals == length_word)
-            {
               break;
-            }
           }
         }
 
@@ -447,9 +433,7 @@ ROI *horizontal_forward(char *word, char **matrix, int *rows, int *cols)
           if (j + k < *cols && word[k] == matrix[i][j + k])
           {
             if (++count_equals == length_word)
-            {
               break;
-            }
           }
         }
 
