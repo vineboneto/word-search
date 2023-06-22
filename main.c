@@ -50,20 +50,19 @@ int main()
     scanf("%d", &flag);
     getchar(); // Limpar o buffer
 
-    char *word = create_string(100);
-    printf("Digite a palavra que deseja buscar: ");
-    fgets(word, 100, stdin);
-    word[strcspn(word, "\n")] = 0; // remover quebra de linha para não ficar um caracter a mais
-
-    printf("\nBuscando a palavra: %s\n", word);
-
     if (flag == 1)
     {
-      free(word);
-      break;
+      continue;
     }
     else if (flag == 2)
     {
+      char *word = create_string(100);
+      printf("Digite a palavra que deseja buscar: ");
+      fgets(word, 100, stdin);
+      word[strcspn(word, "\n")] = 0; // remover quebra de linha para não ficar um caracter a mais
+
+      printf("\nBuscando a palavra: %s\n", word);
+
       ROI *roi = search_word(word, matrix, &rows, &cols);
 
       if (has_value(roi))
@@ -75,15 +74,13 @@ int main()
       {
         printf("Palavra nao encontrada.\n");
       }
-
+      free(word);
       free(roi);
     }
     else
     {
       printf("Opcao invalida.\n");
     }
-
-    free(word);
   }
 
   for (int i = 0; i < rows; i++)
