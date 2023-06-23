@@ -113,10 +113,9 @@ ROI *search_word(char *word, char **matrix, int *rows, int *cols)
   for (int i = 0; i < num_funcs; i++)
   {
     roi = search_funcs[i](word, matrix, rows, cols);
+
     if (has_value(roi))
-    {
       return roi;
-    }
   }
 
   return create_roi();
@@ -125,9 +124,7 @@ ROI *search_word(char *word, char **matrix, int *rows, int *cols)
 int has_value(ROI *roi)
 {
   if (roi->A.x != -1 && roi->A.y != -1 && roi->B.x != -1 && roi->B.y != -1)
-  {
     return true;
-  }
   return false;
 }
 
