@@ -117,6 +117,7 @@ ROI *diagonal_SW(char *word, char **matrix, int *rows, int *cols) {
     for (int j = 0; j < *cols; j++) {
 
       if (word[0] == matrix[i][j]) {
+
         int count_equals = 0;
         int k = 0;
 
@@ -150,6 +151,7 @@ ROI *diagonal_NE(char *word, char **matrix, int *rows, int *cols) {
     for (int j = 0; j < *cols; j++) {
 
       if (word[0] == matrix[i][j]) {
+
         int count_equals = 0;
         int k = 0;
 
@@ -183,6 +185,7 @@ ROI *diagonal_NW(char *word, char **matrix, int *rows, int *cols) {
     for (int j = *cols - 1; j > -1; j--) {
 
       if (word[0] == matrix[i][j]) {
+
         int count_equals = 0;
         int k = 0;
 
@@ -215,6 +218,7 @@ ROI *diagonal_SE(char *word, char **matrix, int *rows, int *cols) {
     for (int j = 0; j < *cols; j++) {
 
       if (word[0] == matrix[i][j]) {
+
         int count_equals = 0;
         int k = 0;
 
@@ -248,6 +252,7 @@ ROI *vertical_backward(char *word, char **matrix, int *rows, int *cols) {
     for (int j = *cols - 1; j > -1; j--) {
 
       if (word[0] == matrix[i][j]) {
+
         int count_equals = 0;
         int k = 0;
 
@@ -281,6 +286,7 @@ ROI *vertical_forward(char *word, char **matrix, int *rows, int *cols) {
     for (int j = 0; j < *cols; j++) {
 
       if (word[0] == matrix[i][j]) {
+
         int count_equals = 0;
         int k = 0;
 
@@ -347,8 +353,8 @@ ROI *horizontal_forward(char *word, char **matrix, int *rows, int *cols) {
     for (int j = 0; j < *cols; j++) {
 
       if (word[0] == matrix[i][j]) {
-        int count_equals = 0;
 
+        int count_equals = 0;
         int k = 0;
 
         for (k = 0; k < length_word; k++) {
