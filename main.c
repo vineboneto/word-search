@@ -41,7 +41,6 @@ int main()
 
   char **matrix = fill_matrix(file, &rows, &cols);
   show_matrix(matrix, &rows, &cols);
-
   fclose(file);
 
   while (flag != 1)
@@ -132,7 +131,7 @@ int has_value(ROI *roi)
   return false;
 }
 
-// SW (Sudoeste)
+// (↙️) - SW (Sudoeste)
 ROI *diagonal_SW(char *word, char **matrix, int *rows, int *cols)
 {
   int length_word = strlen(word);
