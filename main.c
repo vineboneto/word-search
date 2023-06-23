@@ -44,7 +44,7 @@ int main()
 
   while (flag != 1)
   {
-    printf("Sair - 1\n");
+    printf("\nSair - 1\n");
     printf("Buscar - 2\n");
     printf("Escolha a opcao para buscar a palavra: ");
     scanf("%d", &flag);
