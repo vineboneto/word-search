@@ -42,6 +42,8 @@ int main()
   char **matrix = fill_matrix(file, &rows, &cols);
   show_matrix(matrix, &rows, &cols);
 
+  fclose(file);
+
   while (flag != 1)
   {
     printf("\nSair - 1\n");
@@ -504,7 +506,6 @@ char **fill_matrix(FILE *file, int *rows, int *cols)
         fscanf(file, "%c", &matrix[i][j / 2]);
     }
   }
-  fclose(file);
 
   return matrix;
 }
