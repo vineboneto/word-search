@@ -1,1 +1,1 @@
-gcc main.c && ./a
+gcc main.c bin/utils.c bin/roi.c bin/word_search.c  && ./a
