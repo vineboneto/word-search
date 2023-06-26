@@ -98,8 +98,8 @@ ROI *diagonal_NW(char *word, char **matrix, int *rows, int *cols) {
   int length_word = strlen(word);
   ROI *roi = create_roi();
 
-  for (int i = *rows - 1; i > -1; i--) {
-    for (int j = *cols - 1; j > -1; j--) {
+  for (int i = 0; i < *rows; i++) {
+    for (int j = 0; j < *cols; j++) {
 
       if (word[0] == matrix[i][j]) {
 
@@ -165,8 +165,8 @@ ROI *vertical_backward(char *word, char **matrix, int *rows, int *cols) {
   ROI *roi = create_roi();
   int length_word = strlen(word);
 
-  for (int i = *rows - 1; i > -1; i--) {
-    for (int j = *cols - 1; j > -1; j--) {
+  for (int i = 0; i < *rows; i++) {
+    for (int j = 0; j < *cols; j++) {
 
       if (word[0] == matrix[i][j]) {
 
@@ -232,8 +232,8 @@ ROI *horizontal_backward(char *word, char **matrix, int *rows, int *cols) {
   ROI *roi = create_roi();
   int length_word = strlen(word);
 
-  for (int i = *rows - 1; i > -1; i--) {
-    for (int j = *cols - 1; j > -1; j--) {
+  for (int i = 0; i < *rows; i++) {
+    for (int j = 0; j < *cols; j++) {
 
       if (word[0] == matrix[i][j]) {
 
